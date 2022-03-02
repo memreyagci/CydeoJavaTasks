@@ -28,7 +28,20 @@ public class SalaryCalculator {
                 System.err.println("Invalid Entry for state tax Rate");
             }
 
-            System.out.println("Would you like to calculate another rectangle?");
+            double grossSalary = hourlyRate * weeklyHour;
+            double federalTax = grossSalary * 26 / 100;
+            double stateTax = grossSalary * taxRate / 100;
+            double totalTax = federalTax + stateTax;
+            double netIncome = grossSalary - totalTax;
+
+            System.out.printf(
+                    "Gross Salary: %.2f\n" +
+                            "Federal Tax: %.2f\n" +
+                            "State Tax: %.2f\n" +
+                            "Total Tax: %.2f\n" +
+                            "Net Income: %.2f\n\n", grossSalary, federalTax, stateTax, totalTax, netIncome);
+
+            System.out.println("Would you like to continue?");
             String answer = scan.next();
 
             while (true) {
@@ -36,6 +49,7 @@ public class SalaryCalculator {
                     break;
                 } else {
                     System.err.println("Please enter a valid answer:");
+                    System.exit(0);
                 }
             }
 

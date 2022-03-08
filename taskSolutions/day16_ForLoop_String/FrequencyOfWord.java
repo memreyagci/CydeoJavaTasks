@@ -10,12 +10,20 @@ public class FrequencyOfWord {
         String word;
         int numOfJava = 0;
 
-        for (int i = 0; i < sentence.length() - 3; i++) {
-            word = "" + sentence.charAt(i) + sentence.charAt(i + 1) + sentence.charAt(i + 2) + sentence.charAt(i + 3);
-
+        for (int i = 0; i < sentence.length() - 4; i++) {
             word = sentence.substring(i, i+4);
             if (word.equals("Java")) {
-                numOfJava++;
+                if (i == 0) {
+                    if (i+4 > sentence.length()) {
+                        numOfJava++;
+                    } else if (sentence.charAt(i+4) == ' ') {
+                        numOfJava++;
+                    }
+                } else if (i+4 == sentence.length() - 1) {
+                    numOfJava++;
+                } else if (sentence.substring(i-1, i+5).equals(" Java ")) {
+                    numOfJava++;
+                }
             }
         }
 

@@ -6,7 +6,6 @@ public class AppearancesOfJavaAndPython {
         int numOfPython = 0;
         int numOfJava = 0;
 
-
         for (String s: sentence) {
             for (int i = 0; i < s.length() - 3; i++) {
                 if(s.substring(i, i + 4).equals("java")) {

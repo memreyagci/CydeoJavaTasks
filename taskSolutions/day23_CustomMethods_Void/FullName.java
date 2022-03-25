@@ -1,4 +1,4 @@
-package day23_CustomMethod;
+package day23_CustomMethods_Void;
 
 public class FullName {
     public static void main(String[] args) {

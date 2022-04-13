@@ -1,6 +1,5 @@
 package day19_Loops_String;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HighestFrequency {

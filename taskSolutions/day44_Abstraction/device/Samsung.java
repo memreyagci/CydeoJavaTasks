@@ -1,7 +1,7 @@
-package day43_Abstraction.device;
+package day44_Abstraction.device;
 
-public class Google extends Phone implements Downloadable, AndroidApps {
-    public Google(String brand, String model, String size, boolean hasBattery, boolean hasPowerButton, String color, double price) {
+public class Samsung extends Phone implements Downloadable, AndroidApps {
+    public Samsung(String brand, String model, String size, boolean hasBattery, boolean hasPowerButton, String color, double price) {
         super(brand, model, size, hasBattery, hasPowerButton, color, price);
     }
 
@@ -22,6 +22,6 @@ public class Google extends Phone implements Downloadable, AndroidApps {
 }
 
 /*
-				4. Google:
+				2. Samsung:
 						extends Phone class and implements Downloadable & AndroidApps interfaces
  */

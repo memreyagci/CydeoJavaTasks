@@ -1,4 +1,4 @@
-package day43_Abstraction.device;
+package day44_Abstraction.device;
 
 public abstract class Computer extends Device {
     public Computer(String brand, String model, String size, boolean hasBattery, boolean hasPowerButton, String color, double price) {

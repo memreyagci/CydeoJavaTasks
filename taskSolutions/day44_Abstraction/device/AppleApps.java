@@ -1,4 +1,4 @@
-package day43_Abstraction.device;
+package day44_Abstraction.device;
 
 public interface AppleApps {
     String appStoreName = "App Store", OS = "iOS";

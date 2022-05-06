@@ -1,4 +1,4 @@
-package day43_Abstraction.device;
+package day44_Abstraction.device;
 
 public class Desktop extends Computer {
     public Desktop(String brand, String model, String size, boolean hasBattery, boolean hasPowerButton, String color, double price) {
